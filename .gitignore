@@ -1,0 +1,5 @@
+build/
+py_src/
+docs/.ipynb_checkpoints/
+images/
+docs/
