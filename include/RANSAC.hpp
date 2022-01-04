@@ -11,7 +11,7 @@
 class RANSAC_obj 
 {
 public:
-	RANSAC_obj(float prob = 0.995, float inlier_p = 0.5, int threshold = 10, int m = 6) :_prob(prob), _inlier_p(inlier_p), _threshold(threshold), _m(m)
+	RANSAC_obj(float prob = 0.995, float inlier_p = 0.5, float threshold = 10, int m = 6) :_prob(prob), _inlier_p(inlier_p), _threshold(threshold), _m(m)
 	{
 		srand((unsigned)time(NULL));  // random seed, seed different -> random val different
 	};
@@ -36,8 +36,8 @@ public:
 		std::vector<uchar> &ransac_status, int max_sampling=1000);
 
 private:
-	float _prob, _inlier_p;
-	int _threshold, _m;
+	float _prob, _inlier_p, _threshold;
+	int _m;
 
 };
 
