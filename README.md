@@ -6,7 +6,9 @@
 
 * 依赖
 
-  `OpenCV`、`Opencv-contrib`、`cuSolver`、`CUDA`
+  `OpenCV 4.5.0`、`OpenCV-contrib 4.5.0`、`cuSolver`、`CUDA 10.1`
+
+**注意：** `OpenCV3`与`OpenCV4`关于SIFT使用接口不同
 
 ## 二、算法流程
 
